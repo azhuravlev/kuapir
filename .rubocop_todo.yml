@@ -30,7 +30,7 @@ Metrics/AbcSize:
 # Offense count: 1
 # Configuration parameters: CountComments, CountAsOne.
 Metrics/ClassLength:
-  Max: 672
+  Max: 700
 
 # Offense count: 81
 # Configuration parameters: IgnoredMethods.
@@ -40,7 +40,7 @@ Metrics/CyclomaticComplexity:
 # Offense count: 3
 # Configuration parameters: CountComments, CountAsOne, ExcludedMethods, IgnoredMethods.
 Metrics/MethodLength:
-  Max: 64
+  Max: 65
 
 # Offense count: 150
 # Configuration parameters: IgnoredMethods.
@@ -63,4 +63,13 @@ Style/GuardClause:
 # Configuration parameters: AutoCorrect, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
 # URISchemes: http, https
 Layout/LineLength:
-  Max: 1188
+  Max: 120
+  IgnoredPatterns:
+    - '\A.*is not a valid attribute\s.*'
+    - '\A.*The input argument\s.*'
+    - '\A.*invalid value for\s.*'
+    - '\A.*Must be\s.*'
+    - '\A.*logger.debug\s.*'
+    - '^\s*#\s.*'
+  Exclude:
+    - 'lib/kuapir/models/*.rb'

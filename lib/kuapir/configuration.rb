@@ -255,7 +255,10 @@ module Kuapir
       servers = server_settings if servers.nil?
 
       # check array index out of bound
-      raise ArgumentError, "Invalid index #{index} when selecting the server. Must be less than #{servers.size}" if index.negative? || index >= servers.size
+      if index.negative? || index >= servers.size
+        raise ArgumentError,
+              "Invalid index #{index} when selecting the server. Must be less than #{servers.size}"
+      end
 
       server = servers[index]
       url = server[:url]
@@ -265,7 +268,8 @@ module Kuapir
       # go through variable and assign a value
       server[:variables].each do |name, _variable|
         if variables.key?(name)
-          if !server[:variables][name].key?(:enum_values) || server[:variables][name][:enum_values].include?(variables[name])
+          if !server[:variables][name].key?(:enum_values) ||
+             server[:variables][name][:enum_values].include?(variables[name])
             url.gsub! "{#{name}}", variables[name]
           else
             raise ArgumentError,

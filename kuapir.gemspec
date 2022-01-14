@@ -20,8 +20,14 @@ Gem::Specification.new do |s|
   s.authors     = ["Alexey Zhuravlev"]
   s.email       = ["alexey.g.zhuravlev@gmail.com"]
   s.summary     = "Kinopoisk Unofficial API Ruby Gem"
-  s.description = "Kinopoisk Unofficial API предеставляет доступ к данным сайта https://www.kinopoisk.ru. Для доступа вы должны получить токен, который будет доступен после регистрации на <a href=\"https://kinopoiskapiunofficial.tech\">https://kinopoiskapiunofficial.tech</a> </br> <b>Ограничения:</b>  лимитов на общее кол-во запросов нет. Но есть на кол-во запросов в секунду. </br> Каждый пользователь имеет ограничение в <b>20 req/sec</b>. </br> <b>Некоторые</b> эндпоинты имеют свои собственные ограничения, они указаны в описании для статуса <b>429</b>. </br>"
-  s.license     = "Unlicense"
+  s.description = <<-DESC
+    Kinopoisk Unofficial API предеставляет доступ к данным сайта https://www.kinopoisk.ru.#{' '}
+    Для доступа вы должны получить токен, который будет доступен после регистрации на https://kinopoiskapiunofficial.tech
+    Ограничения: лимитов на общее кол-во запросов нет. Но есть на кол-во запросов в секунду.
+    Каждый пользователь имеет ограничение в 20 req/sec.#{' '}
+    Некоторые эндпоинты имеют свои собственные ограничения, они указаны в описании для статуса 429."
+  DESC
+  s.license = "Unlicense"
   s.required_ruby_version = ">= 2.7"
 
   s.add_runtime_dependency "typhoeus", "~> 1.0", ">= 1.0.1"

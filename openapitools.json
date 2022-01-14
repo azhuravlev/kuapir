@@ -2,6 +2,20 @@
   "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "5.3.1"
+    "version": "5.3.1",
+    "generators":{
+      "v2.0": {
+        "generatorName": "ruby",
+        "output": "./",
+        "templateDir": "./openapi-generator-templates",
+        "inputSpec": "./kinopoiskapiunofficial-openapi.json",
+        "additionalProperties": {
+          "gemAuthor": "Alexey Zhuravlev",
+          "gemAuthorEmail": "alexey.g.zhuravlev@gmail.com",
+          "gemRequiredRubyVersion": ">= 2.7",
+          "moduleName": "Kuapir"
+        }
+      }
+    }
   }
 }
