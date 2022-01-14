@@ -59,6 +59,13 @@ module Kuapir
     # @return [String]
     attr_accessor :password
 
+    # Defines the proxy used for HTTP requests
+    #
+    # Only http/https proxy supported
+    #
+    # @return [String]
+    attr_accessor :proxy
+
     # Defines the access token (Bearer) used with OAuth2.
     attr_accessor :access_token
 
@@ -139,6 +146,7 @@ module Kuapir
       @scheme = "https"
       @host = "kinopoiskapiunofficial.tech"
       @base_path = ""
+      @proxy = nil
       @server_index = 0
       @server_operation_index = {}
       @server_variables = {}

@@ -66,6 +66,9 @@ Kuapir.configure do |config|
   config.api_key['ApiKeyAuth'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['ApiKeyAuth'] = 'Bearer'
+  
+  # Uncomment the following line to set a proxy for requests (defaults to nil)
+  # config.proxy = 'http://my_proxy.com:1111'
 end
 
 api_instance = Kuapir::FilmsApi.new
