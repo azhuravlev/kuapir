@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kuapir (0.1.0)
+    kuapir (0.1.1)
       typhoeus (~> 1.0, >= 1.0.1)
 
 GEM
