@@ -24,7 +24,11 @@ Gem::Specification.new do |s|
     Каждый пользователь имеет ограничение в 20 req/sec.#{' '}
     Некоторые эндпоинты имеют свои собственные ограничения, они указаны в описании для статуса 429."
   DESC
-  s.license = "Unlicense"
+  s.license = "MIT"
+  s.homepage = "https://github.com/azhuravlev/kuapir"
+
+  s.metadata["allowed_push_host"] = "https://rubygems.org"
+
   s.required_ruby_version = ">= 2.7"
 
   s.add_runtime_dependency "typhoeus", "~> 1.0", ">= 1.0.1"
