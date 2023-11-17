@@ -100,9 +100,9 @@ module Kuapir
         raise ArgumentError,
               "Missing the required parameter 'film_id' when calling ReviewsApi.api_v1_reviews_get"
       end
-      if @api_client.config.client_side_validation && film_id > 5000000
+      if @api_client.config.client_side_validation && film_id > 500_000_000
         raise ArgumentError,
-              'invalid value for "film_id" when calling ReviewsApi.api_v1_reviews_get, must be smaller than or equal to 5000000.'
+              'invalid value for "film_id" when calling ReviewsApi.api_v1_reviews_get, must be smaller than or equal to 500_000_000.'
       end
 
       if @api_client.config.client_side_validation && film_id < 1
