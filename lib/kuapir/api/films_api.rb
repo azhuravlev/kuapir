@@ -34,10 +34,6 @@ module Kuapir
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v21_films_id_sequels_and_prequels_get"
       end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v21_films_id_sequels_and_prequels_get, must be smaller than or equal to 500_000_000.'
-      end
 
       if @api_client.config.client_side_validation && id < 1
         raise ArgumentError,
@@ -448,10 +444,6 @@ module Kuapir
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_box_office_get"
       end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_box_office_get, must be smaller than or equal to 500_000_000.'
-      end
 
       if @api_client.config.client_side_validation && id < 1
         raise ArgumentError,
@@ -521,10 +513,6 @@ module Kuapir
       if @api_client.config.client_side_validation && id.nil?
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_distributions_get"
-      end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_distributions_get, must be smaller than or equal to 500_000_000.'
       end
 
       if @api_client.config.client_side_validation && id < 1
@@ -596,10 +584,6 @@ module Kuapir
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_facts_get"
       end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_facts_get, must be smaller than or equal to 500_000_000.'
-      end
 
       if @api_client.config.client_side_validation && id < 1
         raise ArgumentError,
@@ -667,10 +651,6 @@ module Kuapir
       if @api_client.config.client_side_validation && id.nil?
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_get"
-      end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_get, must be smaller than or equal to 500_000_000.'
       end
 
       if @api_client.config.client_side_validation && id < 1
@@ -745,10 +725,6 @@ module Kuapir
       if @api_client.config.client_side_validation && id.nil?
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_images_get"
-      end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_images_get, must be smaller than or equal to 500_000_000.'
       end
 
       if @api_client.config.client_side_validation && id < 1
@@ -837,10 +813,6 @@ module Kuapir
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_seasons_get"
       end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_seasons_get, must be smaller than or equal to 500_000_000.'
-      end
 
       if @api_client.config.client_side_validation && id < 1
         raise ArgumentError,
@@ -908,10 +880,6 @@ module Kuapir
       if @api_client.config.client_side_validation && id.nil?
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_similars_get"
-      end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_similars_get, must be smaller than or equal to 500_000_000.'
       end
 
       if @api_client.config.client_side_validation && id < 1
@@ -982,10 +950,6 @@ module Kuapir
       if @api_client.config.client_side_validation && id.nil?
         raise ArgumentError,
               "Missing the required parameter 'id' when calling FilmsApi.api_v22_films_id_videos_get"
-      end
-      if @api_client.config.client_side_validation && id > 500_000_000
-        raise ArgumentError,
-              'invalid value for "id" when calling FilmsApi.api_v22_films_id_videos_get, must be smaller than or equal to 500_000_000.'
       end
 
       if @api_client.config.client_side_validation && id < 1
